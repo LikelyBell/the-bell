@@ -1,6 +1,7 @@
-<html>
+<html lang="en">
 <head>
-<link rel="stylesheet" href="style.html">
+<link rel="stylesheet" href="style.css">
+<title>The Bell - Address</title>
 </head>
 <body>
 
@@ -15,7 +16,18 @@
 <!--Content-->
 <div class="element">
 <div class="ip">
-<h1>IP: 75.58.61.140:25565</h1>
+<h1>bell.hot-singles.link</h1>
+<p><b>Direct IP:</b> 75.58.61.140:25565</p>
+<noscript>Javascript is required to copy text automatically</noscript>
+<button id="copyIp">Copy to clipboard</button>
+<script>
+    copyIpButton = document.getElementById("copyIp");
+    copyIpListener = copyIpButton.addEventListener("click",copyIp);
+    function copyIp() {
+        navigator.clipboard.writeText("bell.hot-singles.link:25565");
+        copyIpButton.innerHTML = "Copied!";
+    }
+</script>
 </div>
 </div>
 

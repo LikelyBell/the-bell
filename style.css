@@ -1,7 +1,3 @@
-<html>
-<body>
-<style>
-
 /* Header centering */
 .homehead {text-align: center;}
 
@@ -23,10 +19,6 @@ body {background-image: url("img.jpeg"); background-repeat: no-repeat; backgroun
 /* Styling for the homepage's links */
 .links {margin-left: auto; margin-right: auto; border-radius: 15px; padding:10px; width:100px; position:relative; background: rgb(204, 204, 204); background: rgba(204, 204, 204, 0.9); }
 
-.legal {margin-top: auto;}
+.legal {margin-top: auto; background-color: white; width: 100%; padding: 1px 0px; text-align:center;}
 
 .announce {text-align: center;}
-
-</style>
-</body>
-</html>
