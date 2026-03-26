@@ -1,26 +1,156 @@
-/* Header centering */
-.homehead {text-align: center;}
+/* Navigation */
 
-/* Header styling */
-.homehead h1{font-family: 'Courier New', monospace; font-size: 60px; text-decoration: underline; text-align: center;}
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+  opacity: 0.9;
+}
 
-/* Styling for homepage's subtitle */
-.homehead h2{font-family: 'Courier New', monospace; text-align: center;}
+.nav ul li {
+  float: left;
+}
 
-/* Generic centering */
-.direct {text-align: center; padding: 5px;}
+.nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+}
 
-/* Background image */
-body {background-image: url("img.jpeg"); background-repeat: no-repeat; background-size: cover;}
+.nav ul li a:hover {
+  background-color: #111111;
+}
 
-/* Boxes around elements, with transparency */
-.element {margin-left: auto; margin-right: auto; border-radius: 25px; padding:20px; width:500px; position:relative; background: rgb(204, 204, 204); background: rgba(204, 204, 204, 0.85); }
 
-/* Styling for the homepage's links */
-.links {margin-left: auto; margin-right: auto; border-radius: 15px; padding:10px; width:100px; position:relative; background: rgb(204, 204, 204); background: rgba(204, 204, 204, 0.9); }
+/* Headings */
 
-.legal {position: absolute; bottom: 0; margin-top: auto; background-color: white; width: 100%; padding: 1px 0px; text-align:center;}
+.headings h1 {
+	text-align: center;
+	text-decoration: underline;
+	font-size: 75px;
+	font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+}
 
-.announce {text-align: center;}
+.headings h2 {
+	text-align: center;
+	font-size: 45px;
+	font-family: Tahoma, Verdana, Segoe, sans-serif; font-size: 24px; font-style: normal; 	font-variant: normal; font-weight: 500; line-height: 25px;
+}
 
-.homehead a{color: #000000; font-family: 'Courier New', monospace; font-size: 60px; text-decoration: underline; text-align: center;}
+.headings a {
+	color: black;
+	text-align: center;
+	text-decoration: underline;
+	font-size: 75px;
+	font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+}
+
+
+
+/* Element */
+
+.element {
+	border-style: solid;
+	padding: 10px;
+	margin-left: 100px;
+	margin-right: 100px;
+	border-radius: 25px;
+	background: rgb(204, 204, 204); 
+	background: rgba(204, 204, 204, 0.85);
+}
+
+.element h1 {
+	font-family: Tahoma, Verdana, Segoe, sans-serif; font-size: 24px; font-style: normal; 	font-variant: normal; font-weight: 400; line-height: 20px;
+}
+
+.element h2 {
+	text-align: center;
+	font-family: Tahoma, Verdana, Segoe, sans-serif; font-size: 20px; font-style: normal; 	font-variant: normal; font-weight: 400; line-height: 20px;
+}
+
+.element h3 {
+	font-family: Tahoma, Verdana, Segoe, sans-serif; font-size: 16px; font-style: normal; 	font-variant: normal; font-weight: 500; line-height: 20px;
+}
+
+.element li {
+	font-family: Tahoma, Verdana, Segoe, sans-serif; font-size: 15px; font-style: normal; 	font-variant: normal; font-weight: 450; line-height: 20px;
+}
+
+.element p {
+	font-family: Tahoma, Verdana, Segoe, sans-serif; font-size: 14px; font-style: normal; 	font-variant: normal; font-weight: 400; line-height: 20px;
+}
+
+.element a {
+	text-align: center;
+	width: 100%;
+	font-size: 20px;
+	color: black;
+	font-family: Tahoma, Verdana, Segoe, sans-serif; font-size: 14px; font-style: normal; 	font-variant: normal; font-weight: 400; line-height: 20px;
+}
+
+
+/* Announcements Panel */
+
+.announce {
+	text-align: center;
+	font-family: Tahoma, Verdana, Segoe, sans-serif; font-size: 15px; font-style: normal; 	font-variant: normal; font-weight: 400; line-height: 20px;
+}
+
+.announce h1 {
+	text-align: center;
+	font-family: Tahoma, Verdana, Segoe, sans-serif; font-size: 20px; font-style: normal; 	font-variant: normal; font-weight: 500; line-height: 20px;
+}
+
+
+/* Navigation Bar IP */
+
+.navip {
+	text-align: right;
+	margin-right: 25px;
+	color: white;
+	font-family: Tahoma, Verdana, Segoe, sans-serif; font-size: 14px; font-style: normal; 	font-variant: normal; font-weight: 400; line-height: 20px;
+}
+
+
+/* General */
+
+body {
+	background-image: url("background.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.box {
+	border-style: dotted;
+	padding: 10px;
+	margin-top: 10px;
+	margin-bottom: auto;
+	margin-left: 10px;
+	margin-right: 10px;
+	border-radius: 25px;
+	background: rgb(204, 204, 204); 
+	background: rgba(204, 204, 204, 0.6);
+}
+
+.version {
+	text-align: center;
+	font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+}
+
+.desc {
+	font-family: Tahoma, Verdana, Segoe, sans-serif; font-size: 14px; font-style: normal; 	font-variant: normal; font-weight: 400; line-height: 20px;
+}
+
+.disclink a {
+	text-align: center;
+	font-family: Tahoma, Verdana, Segoe, sans-serif; font-size: 24px; font-style: normal; 	font-variant: normal; font-weight: 400; line-height: 20px;
+}
+
+
+
