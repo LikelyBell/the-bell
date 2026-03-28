@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Copperplate Gothic Light";
+    src: url("/copperplate-light.ttf");
+}
+
 /* Navigation */
 
 .nav ul {
@@ -19,7 +24,7 @@
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-family: Copperplate, "Copperplate Gothic Light", fantasy, arial;
+  font-family: "Copperplate Gothic Light", fantasy, arial;
 }
 
 .nav ul li a:hover {
@@ -33,7 +38,7 @@
 	text-align: center;
 	text-decoration: underline;
 	font-size: 75px;
-	font-family: Copperplate, "Copperplate Gothic Light", fantasy, arial;
+	font-family: "Copperplate Gothic Light", fantasy, arial;
 }
 
 .headings h2 {
@@ -47,7 +52,7 @@
 	text-align: center;
 	text-decoration: underline;
 	font-size: 75px;
-	font-family: Copperplate, "Copperplate Gothic Light", fantasy, arial;
+	font-family: "Copperplate Gothic Light", fantasy, arial;
 }
 
 
@@ -140,7 +145,7 @@ body {
 
 .version {
 	text-align: center;
-	font-family: Copperplate, "Copperplate Gothic Light", fantasy, arial;
+	font-family: "Copperplate Gothic Light", fantasy, arial;
 }
 
 .desc {
