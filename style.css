@@ -143,10 +143,11 @@ body {
 	background: rgba(204, 204, 204, 0.6);
 }
 
-.server-status p {
+.server-status {
 	text-align: center;
 	font-family: "Copperplate Gothic Light", fantasy, arial;
-
+}
+	
 .version {
 	text-align: center;
 	font-family: "Copperplate Gothic Light", fantasy, arial;
