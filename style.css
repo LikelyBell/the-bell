@@ -80,14 +80,17 @@
 
 .element h3 {
 	font-family: Tahoma, Verdana, Segoe, arial; font-size: 16px; font-style: normal; 	font-variant: normal; font-weight: 500; line-height: 20px;
+  text-aign: center;
 }
 
 .element li {
 	font-family: Tahoma, Verdana, Segoe, arial; font-size: 15px; font-style: normal; 	font-variant: normal; font-weight: 450; line-height: 20px;
+  text-align: center;
 }
 
 .element p {
 	font-family: Tahoma, Verdana, Segoe, arial; font-size: 14px; font-style: normal; 	font-variant: normal; font-weight: 400; line-height: 20px;
+  text-align: center;
 }
 
 .element a {
