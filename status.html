@@ -1,0 +1,99 @@
+<html>
+<head>
+  <title>The Bell</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+
+<!--NAV-->
+<div class="nav">
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="join.html">Join</a></li>
+  <li><a href="status.html">Status</a></li>
+  <li><a href="about.html">About</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <div class="navip">
+  <p>mc.bellserver.us</p>
+  </div>
+</ul>
+</div>
+
+<!--Box-->
+<div class="box">
+
+<!--Spacing-->
+<br>
+
+<!--HEADER-->
+<div class="headings">
+  <br>
+<h1>The Bell Server Status</h1>
+  <br>
+</div>
+
+<!--spacing-->
+<br><br><br>
+
+
+<!--Server Status Ping-->
+<div class="element">
+<br>
+<h2>Server Status</h2>
+<div id="server-status">
+    <p>Status: <span id="status-text">Loading...</span></p>
+    <p>Players: <span id="player-count">-</span></p>
+</div>
+</div>
+
+<!--Server Ping Script-->
+<script>
+const serverIP = 'mc.bellserver.us';
+
+async function getStatus() {
+    try {
+        const response = await fetch(`https://api.mcsrvstat.us/2/${serverIP}`);
+        const data = await response.json();
+
+        const statusText = document.getElementById('status-text');
+        const playerCount = document.getElementById('player-count');
+
+        if (data.online) {
+            statusText.innerText = "Online";
+            statusText.style.color = "green";
+            playerCount.innerText = `${data.players.online} / ${data.players.max}`;
+        } else {
+            statusText.innerText = "Offline";
+            statusText.style.color = "red";
+            playerCount.innerText = "0";
+        }
+    } catch (error) {
+        console.error('Error fetching server status:', error);
+    }
+}
+
+getStatus();
+</script>
+
+<!--UptimeRobot-->
+<div class="element"
+<br>
+<h2>3rd Party Ping</h2>
+<h3>UptimeRobot</h3>
+<br>
+<a href="https://stats.uptimerobot.com/Kjy1pLgLVS" rel="noreferrer">UptimeRobot</a>
+<br>
+</div
+
+<!--spacing-->
+<br><br><br>
+
+<!--Endbox-->
+</div>
+
+    </body>
+</html>
