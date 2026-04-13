@@ -46,6 +46,45 @@
 <!--Spacing-->
 <br>
 
+<!--Server Status Ping-->
+<div class="element">
+<br>
+<h2>Server Status</h2>
+<div id="server-status">
+    <p>Status: <span id="status-text">Loading...</span></p>
+    <p>Players: <span id="player-count">-</span></p>
+</div>
+</div>
+
+<!--Server Ping Script-->
+<script>
+const serverIP = 'mc.bellserver.us';
+
+async function getStatus() {
+    try {
+        const response = await fetch(`https://api.mcsrvstat.us/2/${serverIP}`);
+        const data = await response.json();
+
+        const statusText = document.getElementById('status-text');
+        const playerCount = document.getElementById('player-count');
+
+        if (data.online) {
+            statusText.innerText = "Online";
+            statusText.style.color = "green";
+            playerCount.innerText = `${data.players.online} / ${data.players.max}`;
+        } else {
+            statusText.innerText = "Offline";
+            statusText.style.color = "red";
+            playerCount.innerText = "0";
+        }
+    } catch (error) {
+        console.error('Error fetching server status:', error);
+    }
+}
+
+getStatus();
+</script>
+
 <!--ANNOUNCEMENTS-->
 <div class="element">
 <div class="announce">
